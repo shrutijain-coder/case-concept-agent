@@ -6,7 +6,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Case Conceptualisation Practice",
+  title: "Caseform — Clinical Case Conceptualisation",
   description:
     "A deliberate-practice environment for early-career therapists to build and interrogate case conceptualisations using hypothetical clinical cases.",
 };

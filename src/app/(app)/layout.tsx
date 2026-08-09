@@ -15,7 +15,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         <div className="flex h-full flex-col overflow-y-auto px-3 py-4">
           <Link href="/dashboard" className="px-2.5 pb-4">
             <span className="text-sm font-semibold text-ink">
-              Case Conceptualisation
+              Caseform
             </span>
             <span className="mt-0.5 block text-[12px] text-ink-subtle">Practice platform</span>
           </Link>

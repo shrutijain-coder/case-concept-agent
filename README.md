@@ -1,4 +1,4 @@
-# Case Conceptualisation Practice Platform
+# Caseform — Case Conceptualisation Practice Platform
 
 A deliberate-practice environment for early-career therapists. The therapist reads a
 hypothetical case, picks CBT or DBT, builds a conceptualisation against a modality-specific

@@ -4,7 +4,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col justify-center px-5 py-12">
       <div className="mb-6">
-        <p className="text-sm font-semibold text-ink">Case Conceptualisation Practice</p>
+        <p className="text-sm font-semibold text-ink">Caseform</p>
         <p className="mt-1 text-[13px] text-ink-muted">
           Deliberate practice with hypothetical cases, between supervision sessions.
         </p>
