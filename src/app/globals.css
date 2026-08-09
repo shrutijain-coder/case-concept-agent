@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutrals — warm stone, deliberately not slate/blue. */
+  --color-canvas: #f5f5f4;
+  --color-surface: #fafaf9;
+  --color-sunken: #efedeb;
+  --color-line: #e7e5e4;
+  --color-line-strong: #d6d3d1;
+
+  --color-ink: #1c1917;
+  --color-ink-muted: #57534e;
+  --color-ink-subtle: #78716c;
+
+  /* Single accent colour. Used for primary actions and the active nav state. */
+  --color-brand: #0f766e;
+  --color-brand-hover: #115e59;
+  --color-brand-tint: #eef4f3;
+
+  --color-caution: #b45309;
+  --color-caution-tint: #fdf6ec;
+  --color-danger: #b91c1c;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+html {
+  background: var(--color-canvas);
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 17px;
+  line-height: 1.35;
+}
+h3 {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* Long-form clinical text: comfortable measure and spacing for reading. */
+.prose-clinical p {
+  margin-bottom: 0.85rem;
+  max-width: 68ch;
+}
+.prose-clinical p:last-child {
+  margin-bottom: 0;
+}
