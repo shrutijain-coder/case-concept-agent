@@ -109,13 +109,13 @@ export default async function CriticalThinkingPage({
         </div>
 
         {/* Desktop: the formulation stays visible next to the question. */}
-        <aside className="hidden lg:block lg:sticky lg:top-6">
+        <aside className="hidden lg:block lg:sticky lg:top-6 max-h-[calc(100vh-3rem)] overflow-y-auto space-y-4 pr-1">
           <Panel>
             <PanelHeader
               title="Your conceptualisation"
               action={<Badge tone="brand">{template.name}</Badge>}
             />
-            <PanelBody className="max-h-[70vh] space-y-3 overflow-y-auto">
+            <PanelBody className="space-y-3">
               {template.sections.map((section) => {
                 const value = (responses[section.id] ?? "").trim();
                 if (!value) return null;
@@ -128,7 +128,7 @@ export default async function CriticalThinkingPage({
               })}
             </PanelBody>
           </Panel>
-          <div className="mt-4">
+          <div>
             <CaseMaterial
               clinicalCase={clinicalCase}
               viewedScenarioIds={exercise.scenariosViewed}
