@@ -80,7 +80,7 @@ export default async function HistoryPage() {
                             ? "1 (not revised)"
                             : `${versions} (revised)`}
                       </td>
-                      <td className="px-5 py-3 text-ink-muted">
+                      <td className="px-5 py-3 text-ink-muted" suppressHydrationWarning>
                         {formatDate(exercise.completedAt ?? exercise.updatedAt)}
                       </td>
                     </tr>

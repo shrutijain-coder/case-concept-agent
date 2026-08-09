@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /* Neutrals — warm stone, deliberately not slate/blue. */
-  --color-canvas: #f5f5f4;
-  --color-surface: #fafaf9;
-  --color-sunken: #efedeb;
-  --color-line: #e7e5e4;
-  --color-line-strong: #d6d3d1;
+  /* Notion-like Neutrals — crisp, clean, minimal slate-stone. */
+  --color-canvas: #fbfbfa;
+  --color-surface: #ffffff;
+  --color-sunken: #f1f1ef;
+  --color-line: #e9e9e8;
+  --color-line-strong: #d4d4d2;
 
-  --color-ink: #1c1917;
-  --color-ink-muted: #57534e;
-  --color-ink-subtle: #78716c;
+  --color-ink: #23272a;
+  --color-ink-muted: #5f6165;
+  --color-ink-subtle: #878a8f;
 
-  /* Single accent colour. Used for primary actions and the active nav state. */
-  --color-brand: #0f766e;
-  --color-brand-hover: #115e59;
-  --color-brand-tint: #eef4f3;
+  /* Notion Blue accent colour for primary actions and active highlights. */
+  --color-brand: #2383e2;
+  --color-brand-hover: #1d72c7;
+  --color-brand-tint: #edf5fd;
 
-  --color-caution: #b45309;
-  --color-caution-tint: #fdf6ec;
-  --color-danger: #b91c1c;
+  --color-caution: #d97706;
+  --color-caution-tint: #fffbe6;
+  --color-danger: #e03e3e;
 
   --radius-sm: 4px;
   --radius-md: 6px;

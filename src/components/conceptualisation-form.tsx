@@ -16,11 +16,17 @@ type SaveStatus = "idle" | "unsaved" | "saving" | "saved" | "error";
 const AUTOSAVE_DELAY_MS = 1200;
 
 function SaveIndicator({ status, savedAt }: { status: SaveStatus; savedAt: string | null }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const label: Record<SaveStatus, string> = {
-    idle: savedAt ? `Saved ${timeAgo(savedAt)}` : "Not saved yet",
+    idle: savedAt ? (mounted ? `Saved ${timeAgo(savedAt)}` : "Saved") : "Not saved yet",
     unsaved: "Unsaved changes",
     saving: "Saving…",
-    saved: savedAt ? `Saved ${timeAgo(savedAt)}` : "Saved",
+    saved: savedAt ? (mounted ? `Saved ${timeAgo(savedAt)}` : "Saved") : "Saved",
     error: "Couldn't save — your text is still here",
   };
 
@@ -28,6 +34,7 @@ function SaveIndicator({ status, savedAt }: { status: SaveStatus; savedAt: strin
     <span
       role="status"
       aria-live="polite"
+      suppressHydrationWarning
       className={
         status === "error" ? "text-[13px] text-danger" : "text-[13px] text-ink-subtle"
       }

@@ -159,7 +159,7 @@ export default async function DashboardPage() {
                     >
                       {caseTitle(exercise)}
                     </Link>
-                    <p className="mt-0.5 text-[13px] text-ink-muted">
+                    <p className="mt-0.5 text-[13px] text-ink-muted" suppressHydrationWarning>
                       {modalityLabel(exercise)} &middot; completed{" "}
                       {formatDate(exercise.completedAt)}
                     </p>
