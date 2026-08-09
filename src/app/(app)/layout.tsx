@@ -11,8 +11,8 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
 
   return (
     <div className="flex min-h-dvh flex-col md:flex-row">
-      <aside className="w-full shrink-0 border-b border-line bg-surface md:h-dvh md:w-60 md:border-r md:border-b-0">
-        <div className="flex h-full flex-col px-3 py-4 md:sticky md:top-0">
+      <aside className="w-full shrink-0 border-b border-line bg-surface md:sticky md:top-0 md:h-dvh md:w-60 md:border-r md:border-b-0">
+        <div className="flex h-full flex-col overflow-y-auto px-3 py-4">
           <Link href="/dashboard" className="px-2.5 pb-4">
             <span className="text-sm font-semibold text-ink">
               Case Conceptualisation
