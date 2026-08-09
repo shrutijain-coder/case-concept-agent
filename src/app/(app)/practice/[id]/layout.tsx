@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { PracticeNav } from "@/components/practice-nav";
 import { requireOwnedExercise } from "@/lib/auth/guard";
 import { requireCase } from "@/lib/content/cases";
 import { stageIndex, stageLabel, TOTAL_STAGES } from "@/lib/practice/summary";
@@ -34,6 +35,12 @@ export default async function PracticeLayout({
           Save and leave
         </Link>
       </div>
+
+      <PracticeNav
+        exerciseId={exercise.id}
+        currentMaxStage={exercise.stage}
+        hasScenarios={clinicalCase.scenarios.length > 0}
+      />
 
       {children}
 
