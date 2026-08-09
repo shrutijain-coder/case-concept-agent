@@ -160,7 +160,7 @@ export default async function CompletePage({
       </Panel>
 
       <div className="flex flex-wrap gap-2">
-        <ButtonLink href="/cases">Practise another case</ButtonLink>
+        <ButtonLink href="/dashboard">Practise another case</ButtonLink>
         <ButtonLink href="/history" variant="secondary">
           Practice history
         </ButtonLink>

@@ -70,8 +70,8 @@ export default async function PeerLearningPage() {
       </Panel>
 
       <div>
-        <ButtonLink href="/cases" variant="secondary" size="sm">
-          Back to the case library
+        <ButtonLink href="/dashboard" variant="secondary" size="sm">
+          Back to the dashboard
         </ButtonLink>
       </div>
     </div>

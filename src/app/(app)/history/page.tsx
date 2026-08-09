@@ -93,7 +93,7 @@ export default async function HistoryPage() {
           <EmptyState
             title="No practice yet"
             action={
-              <ButtonLink href="/cases" variant="secondary" size="sm">
+              <ButtonLink href="/dashboard" variant="secondary" size="sm">
                 Browse cases
               </ButtonLink>
             }
